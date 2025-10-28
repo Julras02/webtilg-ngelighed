@@ -5,9 +5,10 @@ body{
     background-color: #F8F6E1;
 }
 
+
 header{
     display: flex;
-     position: relative; /* Så header kan placere dropdowns, menu osv. korrekt */
+     position: relative;
      z-index: 10000;  
     justify-content: space-between;
     align-items: center;
@@ -21,6 +22,9 @@ header{
     font-weight: bolder;
     font-size: 4rem;
     margin-left: 0.3em;
+    text-decoration: none;
+    text-transform: uppercase;
+    color: #FFF47F;
 }
 
 nav{
@@ -36,6 +40,7 @@ nav a{
 
 #bars{
     display: none;
+    justify-content: flex-end;
     background: none;
     border: none;
     color: #FFF47F;
@@ -49,6 +54,7 @@ nav a{
     width: 100%;
     height: auto;
     overflow: hidden;
+    font-size: 1em;
 }
 
 .hero-image{
@@ -62,19 +68,63 @@ nav a{
     position: absolute;
     top: 50%;
   left: 34.5%;
-  transform: translate(-50%, -50%); /* Centrerer teksten perfekt */
+  transform: translate(-50%, -50%); 
   color: #fff7c5;
   padding: 0.2rem;
+  font-size: 1em;
 }
 
-.hero-text h1{
-    font-size: 2.5em;
-    margin-bottom: 0.5em;
+.hero-text1{
+     position: absolute;
+  
+  margin-left: 30px;
+  margin-top: -20px;
+ 
+  color: #fff7c5;
+  
+  font-size: 3em;
+  display: flex;
+
+    width: 100%;
+    height: auto;
 }
 
+   .hero-text h1{
+        font-size: 4em;
+        justify-content: center;
+    }
+
+    .hero-text p{
+        font-size: 1em;
+        justify-content: center;
+    }
 .hero-text p{
-    font-size: 1em;
+    font-size: 1.5em;
+    padding-top: 0em;
 }
+
+.hero-text2{
+      position: absolute;
+  
+  margin-left: 30px;
+  margin-top: 10px;
+ 
+  color: #fff7c5;
+  
+  font-size: 2.5em;
+  display: flex;
+}
+
+.overskrift h1{
+    margin: 30px;
+    display: flex;
+}
+.overskrift h2{
+    margin: 30px;
+    display: flex;
+    padding-top: 20px;
+}
+
 
 /*KASSER*/
 .btn {
@@ -92,6 +142,8 @@ nav a{
     grid-template-columns: repeat(2, 1fr);
     gap: 1em;
     padding: 1em;
+    text-decoration: none;
+    text-decoration-line: none;
 }
 
 .box{
@@ -102,6 +154,8 @@ nav a{
     flex-direction: column;
     align-items: center;
     justify-content: space-between;
+    text-decoration: none;
+    text-decoration-line: none;
 }
 
 .box h2{
@@ -109,6 +163,8 @@ nav a{
     margin-top: 0em;
     color:#FFF47F;
     font-size: 40px;
+    text-decoration: none;
+    text-decoration-line: none;
 }
 
 /*IKONER*/
@@ -139,6 +195,7 @@ nav a{
 
 .blue{
     background-color: #5C8EFE;
+    text-decoration: none;
 }
 .pink{
     background-color: #DD227D;
@@ -150,12 +207,135 @@ nav a{
     background-color: #FF5F00;
 }
 
+
+/*TIPS-SIDEN*/
+
+.tips{
+    color: #F8F6E1;
+    font-size: 1em;
+    gap: 5em;
+}
+
+.tips h1{
+    color: #1C401A;
+    margin-left: 1em;
+}
+
+.tip-1{
+    background-color: #FF5F00;
+    margin-right: 1em;
+    margin-left: 2em;
+    padding: 0.5em;
+    padding-left: 1em;
+
+    display: flex;
+    align-items: center;
+    gap: 1em;
+}
+.tip-2, .tip-3, .tip-4{
+    background-color: #FF5F00;
+    margin-right: 1em;
+    margin-left: 2em;
+    margin-top: 1em;
+     padding: 0.5em;
+    padding-left: 1em;
+    margin-bottom: 1em;
+
+    display: flex;
+    align-items: center;
+    gap: 1em;
+}
+
+/*KONTAKT*/
+
+.share-tip, .feedback{
+    background-color: #ffffff;
+   
+    padding: 2em 1em;
+    margin: 1em 1em;
+    border-radius: 12px;
+    border-color: #1C4019;
+    border: 2px solid #1C4019;
+}
+
+.input-box{
+    display: flex;
+    justify-content: flex-start;
+    margin-bottom: 1.5em;
+}
+
+.input-box textarea{
+    width: 100%;
+    max-width: 100%;
+    height: 120px;
+    padding: 1em;
+    border-radius: 8px;
+    resize: none;
+    font-size: 1em;
+    outline: none;
+}
+
+.send-btn{
+    background-color: #00FD2A;
+    color: #1C4019;
+    border: none;
+    padding: 0.8em 1em;
+    border-radius: 30px;
+    font-size: 1em;
+    font-weight: 600;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    gap: 0.6em;
+    margin-left: 10px;
+}
+
+.video-section {
+  
+  margin-left: 50px 1rem;
+  padding-left: 32px;
+  
+}
+
+.video-section h2 {
+  color: #1C4019;
+  margin-bottom: 1rem;
+}
+
+.video-container {
+  display: flex;
+    position: relative;
+  width: 100%;
+  max-width: 768px;  
+  padding-right: 32px;
+  padding-bottom: 56.25%; 
+  height: 0;
+  overflow: hidden;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+}
+
+.video-container iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border: 0;
+  border-radius: 10px;
+}
+
+
+
+
+
 /*FOOTER*/
 .site-footer {
     background-color: #1C401A;
     color: antiquewhite;
     padding: 40px 30px 20px 20px;
     font-size: 20px;
+    margin-top: 10px;
 }
 
 .footer-container {
@@ -193,15 +373,7 @@ nav a{
         justify-content: flex-end;
     }
 
-    .hero-text h1{
-        font-size: 4em;
-        justify-content: center;
-    }
-
-    .hero-text p{
-        font-size: 1em;
-        justify-content: center;
-    }
+   
 
     .boxes{
         grid-template-columns: repeat(4, 1fr);
@@ -241,7 +413,5 @@ nav a{
         border: none;
         color: #FFF47F;   
     }
-
-    
 
 }
