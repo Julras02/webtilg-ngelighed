@@ -1,0 +1,246 @@
+body{
+    margin: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: #222;
+    background-color: #F8F6E1;
+}
+
+header{
+    display: flex;
+     position: relative; /* Så header kan placere dropdowns, menu osv. korrekt */
+     z-index: 10000;  
+    justify-content: space-between;
+    align-items: center;
+    background-color: #1C401A;
+    color: #FFF47F;
+    padding: 1rem;
+}
+
+
+.logo{
+    font-weight: bolder;
+    font-size: 4rem;
+    margin-left: 0.3em;
+}
+
+nav{
+    display: flex;
+    gap: 2.5em;
+}
+
+nav a{
+    color: #F8F6E1;
+    text-decoration: none;
+    font-weight: 500;
+}
+
+#bars{
+    display: none;
+    background: none;
+    border: none;
+    color: #FFF47F;
+    font-size: 40px;
+}
+
+/*HERO SECTION*/ 
+.hero{
+    display: flex;
+    position: relative;
+    width: 100%;
+    height: auto;
+    overflow: hidden;
+}
+
+.hero-image{
+    object-fit: cover;
+    position: relative;
+    width: 100%;
+    height: 300px;
+}
+
+.hero-text{
+    position: absolute;
+    top: 50%;
+  left: 34.5%;
+  transform: translate(-50%, -50%); /* Centrerer teksten perfekt */
+  color: #fff7c5;
+  padding: 0.2rem;
+}
+
+.hero-text h1{
+    font-size: 2.5em;
+    margin-bottom: 0.5em;
+}
+
+.hero-text p{
+    font-size: 1em;
+}
+
+/*KASSER*/
+.btn {
+  background-color: #00FD2A;
+  color: #1C4019;
+  padding: 1rem 1rem;
+  border-radius: 20px;
+  text-decoration: none;
+  font-size: 0.9rem;
+  margin-top: 1.5em;
+  
+}
+.boxes {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1em;
+    padding: 1em;
+}
+
+.box{
+    text-align: center;
+    padding: 1.5em;
+    border-radius: 12px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.box h2{
+    margin-bottom: 0em;
+    margin-top: 0em;
+    color:#FFF47F;
+    font-size: 40px;
+}
+
+/*IKONER*/
+#cykel{
+    background-color: transparent;
+    border: none;
+    margin: 1em;
+}
+
+#lightbulp{
+    background-color: transparent;
+    border: none;
+    margin: 1em;
+}
+
+#carrot{
+    background-color: transparent;
+    border: none;
+    margin: 1em;
+}
+
+#recycle{
+    background-color: transparent;
+    border: none;
+    margin: 1em;
+}
+
+
+.blue{
+    background-color: #5C8EFE;
+}
+.pink{
+    background-color: #DD227D;
+}
+.yellow{
+    background-color: #FFB10E;
+}
+.orange{
+    background-color: #FF5F00;
+}
+
+/*FOOTER*/
+.site-footer {
+    background-color: #1C401A;
+    color: antiquewhite;
+    padding: 40px 30px 20px 20px;
+    font-size: 20px;
+}
+
+.footer-container {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    max-width: 1200px;
+    margin: 0 auto;
+    gap: 20px;
+}
+
+.footer-section h3 {
+    margin-bottom: 10px;
+    font-size: 30px;
+    text-transform: uppercase;
+}
+
+.footer-section p, 
+.footer-section a {
+    margin-bottom: 10px;
+    color: antiquewhite;
+    text-decoration: none;
+}
+
+/*Desktop*/
+@media screen and (min-width: 769px){
+    
+    
+    #bars{
+        display: none;
+    }
+
+    nav ul {
+        display: flex;
+        justify-content: flex-end;
+    }
+
+    .hero-text h1{
+        font-size: 4em;
+        justify-content: center;
+    }
+
+    .hero-text p{
+        font-size: 1em;
+        justify-content: center;
+    }
+
+    .boxes{
+        grid-template-columns: repeat(4, 1fr);
+    }
+    
+}
+
+/*telefon*/
+@media screen and (max-width:768px){
+    nav{
+        display: none;
+        flex-direction: column;
+        background-color: #408f3c;
+        position: absolute;
+        top: 70px;
+        right: 0;
+        width: 50%;
+        text-align: center;
+        padding-top: 10%;
+        padding-bottom: 10%;
+        gap: 2em;
+        font-size: 30px;
+        border-radius: 10%;
+    }
+
+
+    nav.show{
+        display: flex;
+       
+    }
+
+    #bars{
+        display: block;
+        position: relative;
+        background-color: transparent;
+        border: none;
+        color: #FFF47F;   
+    }
+
+    
+
+}
