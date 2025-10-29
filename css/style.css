@@ -94,13 +94,9 @@ nav a{
         justify-content: center;
     }
 
-    .hero-text p{
-        font-size: 1em;
-        justify-content: center;
-    }
 .hero-text p{
     font-size: 1.5em;
-    padding-top: 0em;
+    gap: 1px;
 }
 
 .hero-text2{
@@ -125,6 +121,65 @@ nav a{
     padding-top: 20px;
 }
 
+/*INFOTEKST FORSIDE*/
+.info-section{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    gap: 2em;
+    padding: 2em 1em;
+    background-color: #f8f6e1;
+    border-radius: 10px;
+    margin: 2em 1em;
+}
+
+.info-text {
+  flex: 1 1 350px;
+  max-width: 600px;
+  color: #004d25;
+  line-height: 1.6;
+}
+
+.info-text h2 {
+  color: #1C4019;
+  margin-bottom: 1rem;
+  font-size: 1.8rem;
+}
+
+.info-text p {
+  margin-bottom: 1rem;
+  font-size: 1.05rem;
+}
+.cta-link {
+  display: inline-block;
+  background-color: #00FD2A;
+  color: #004d25;
+  text-decoration: none;
+  font-weight: bold;
+  padding: 0.7rem 1.4rem;
+  border-radius: 25px;
+  transition: background-color 0.2s ease, transform 0.2s ease;
+}
+
+.cta-link:hover {
+  background-color: #00e025;
+  transform: translateY(-2px);
+}
+
+.info-image {
+  flex: 1 1 300px;
+  text-align: center;
+}
+
+.info-img img {
+  width: 100%;
+  max-width: 450px;
+
+  border-radius: 12px;
+  object-fit: cover;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+}
 
 /*KASSER*/
 .btn {
@@ -208,7 +263,18 @@ nav a{
 }
 
 
-/*TIPS-SIDEN*/
+/*STOPMADSPILD-SIDEN*/
+
+.nav-boxes{
+     display: grid;
+    grid-template-columns: repeat(4, 4fr);
+    gap: 1em;
+    padding: 1em;
+    text-decoration: none;
+    text-decoration-line: none;
+}
+
+
 
 .tips{
     color: #F8F6E1;
@@ -309,7 +375,6 @@ nav a{
   max-width: 768px;  
   padding-right: 32px;
   padding-bottom: 56.25%; 
-  height: 0;
   overflow: hidden;
   border-radius: 10px;
   box-shadow: 0 4px 10px rgba(0,0,0,0.2);
@@ -321,6 +386,7 @@ nav a{
   left: 0;
   width: 100%;
   height: 100%;
+  max-height: 500px;
   border: 0;
   border-radius: 10px;
 }
@@ -379,6 +445,7 @@ nav a{
         grid-template-columns: repeat(4, 1fr);
     }
     
+
 }
 
 
@@ -413,5 +480,18 @@ nav a{
         border: none;
         color: #FFF47F;   
     }
+
+    .hero-text, .hero-text2{
+        font-size: 13px;
+    }
+
+    .hero-text1 h1{
+        font-size: 30pxpx;
+    }
+    .nav-boxes{
+       gap: 0em;
+       padding-left: 0.5em;
+    }
+    
 
 }
