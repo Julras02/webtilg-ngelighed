@@ -214,12 +214,23 @@ nav a{
 }
 
 .box h2{
-    margin-bottom: 0em;
+    margin-bottom: 1em;
     margin-top: 0em;
-    color:#FFF47F;
+    color:#F8F6E1;
     font-size: 40px;
     text-decoration: none;
     text-decoration-line: none;
+}
+
+.box-link {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1.5em;
+    border-radius: 12px;
+    text-decoration: none;
+    color: #F8F6E1;
 }
 
 /*IKONER*/
@@ -249,14 +260,14 @@ nav a{
 
 
 .blue{
-    background-color: #5C8EFE;
+    background-color: #003fc7;
     text-decoration: none;
 }
 .pink{
-    background-color: #DD227D;
+    background-color: #da006a;
 }
 .yellow{
-    background-color: #FFB10E;
+    background-color: #fbab00;
 }
 .orange{
     background-color: #FF5F00;
